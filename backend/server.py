@@ -14,14 +14,6 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pydantic import BaseModel, Field
 from starlette.middleware.cors import CORSMiddleware
 
-# Hidaya Integration - Reserved for future use
-try:
-    from emergentintegrations.llm.chat import LlmChat, UserMessage
-except Exception:  # pragma: no cover
-    LlmChat = None
-    UserMessage = None
-
-
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / ".env")
 
