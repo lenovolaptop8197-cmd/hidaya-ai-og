@@ -1,0 +1,66 @@
+[
+  {
+    "step": 1,
+    "phase": "8 Dhul Hijjah (Yawm at-Tarwiyah)",
+    "title": "Ihram for Hajj and Move to Mina",
+    "instruction": "Enter Ihram for Hajj, renew your intention, and continue Talbiyah. Travel to Mina and establish prayers there.",
+    "recite": "Labbayka Allahumma Hajj.",
+    "details": "Pray Dhuhr, Asr, Maghrib, Isha, and Fajr in Mina. Keep your heart in remembrance and avoid disputes."
+  },
+  {
+    "step": 2,
+    "phase": "9 Dhul Hijjah (Day of Arafah)",
+    "title": "Wuquf at Arafah (Core Pillar)",
+    "instruction": "After sunrise, head to Arafah and remain until sunset in dua, repentance, and devotion.",
+    "recite": "La ilaha illa Allah wahdahu la sharika lah, lahul-mulk wa lahul-hamd wa huwa ala kulli shay'in qadir.",
+    "details": "This is the greatest day of Hajj. Missing Arafah invalidates Hajj, so prioritize reaching and remaining there properly."
+  },
+  {
+    "step": 3,
+    "phase": "Night of 9 Dhul Hijjah",
+    "title": "Muzdalifah Stay and Pebble Collection",
+    "instruction": "After sunset, move to Muzdalifah, pray Maghrib and Isha together, rest, and collect pebbles for stoning.",
+    "recite": "Continue Talbiyah, istighfar, and simple adhkar.",
+    "details": "Collect pebbles calmly and prepare mentally for the rites of the next day."
+  },
+  {
+    "step": 4,
+    "phase": "10 Dhul Hijjah (Eid Day)",
+    "title": "Stone Jamarat al-Aqabah (7 Pebbles)",
+    "instruction": "Stone the largest pillar (Aqabah) with 7 pebbles, saying takbir each throw.",
+    "recite": "Allahu Akbar with each pebble.",
+    "details": "Follow crowd-control timings and keep safe spacing. Do not endanger yourself or others."
+  },
+  {
+    "step": 5,
+    "phase": "10 Dhul Hijjah",
+    "title": "Sacrifice (Hady) and Hair Trimming",
+    "instruction": "Offer the sacrificial animal (directly or via authorized service), then shave or trim hair.",
+    "recite": "Make gratitude dua and ask for acceptance.",
+    "details": "After stoning and hair cut, many Ihram restrictions are lifted (first tahallul), depending on your sequence."
+  },
+  {
+    "step": 6,
+    "phase": "10 Dhul Hijjah",
+    "title": "Tawaf al-Ifadah and Sa'i (if due)",
+    "instruction": "Proceed to Makkah for Tawaf al-Ifadah. Perform Sa'i if required for your Hajj type.",
+    "recite": "Any authentic dhikr and personal supplication.",
+    "details": "This Tawaf is a pillar of Hajj. Coordinate with your group to avoid missing logistics and deadlines."
+  },
+  {
+    "step": 7,
+    "phase": "11-13 Dhul Hijjah (Days of Tashriq)",
+    "title": "Stone All Three Jamarat",
+    "instruction": "After midday each day, stone the small, middle, and large Jamarat (7 pebbles each).",
+    "recite": "Say Allahu Akbar on each throw and make dua after first and second pillars.",
+    "details": "You may leave Mina after day 12 before sunset, or remain through day 13, which is preferable when possible."
+  },
+  {
+    "step": 8,
+    "phase": "Before Leaving Makkah",
+    "title": "Farewell Tawaf (Tawaf al-Wada')",
+    "instruction": "Complete your final Tawaf before departing Makkah.",
+    "recite": "Ask Allah to accept your Hajj and grant steadfastness after return.",
+    "details": "Generally obligatory for pilgrims leaving Makkah; confirm personal exemptions with qualified scholars."
+  }
+]

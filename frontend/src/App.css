@@ -1,0 +1,35 @@
+.islamic-shell {
+    position: relative;
+    background-image:
+        radial-gradient(circle at top right, rgba(201, 168, 76, 0.18), transparent 45%),
+        radial-gradient(circle at bottom left, rgba(26, 107, 74, 0.14), transparent 45%);
+}
+
+.islamic-shell::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("https://images.unsplash.com/photo-1739477274868-86a943b6cd5b?q=80&w=2000&auto=format&fit=crop");
+    opacity: 0.05;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    section > * {
+        animation: fade-up 0.45s ease-out;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

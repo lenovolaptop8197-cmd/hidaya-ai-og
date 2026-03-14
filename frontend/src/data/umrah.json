@@ -1,0 +1,50 @@
+[
+  {
+    "step": 1,
+    "phase": "Before Miqat",
+    "title": "Preparation, Ghusl, and Ihram Clothing",
+    "instruction": "Trim nails and unwanted hair beforehand, perform ghusl if possible, and wear Ihram before reaching Miqat. Men wear two white unstitched cloths; women wear modest normal dress without niqab or gloves.",
+    "recite": "Make intention in your heart and begin Talbiyah: Labbayka Allahumma Labbayk.",
+    "details": "From this point, avoid perfume, marital relations, and cutting hair or nails until you exit Ihram. Keep your heart focused on sincerity and humility."
+  },
+  {
+    "step": 2,
+    "phase": "Entering Makkah",
+    "title": "Arrival and Entering Masjid al-Haram",
+    "instruction": "Enter with calmness and gratitude. If possible, enter with your right foot and make dua. Keep Talbiyah until beginning Tawaf.",
+    "recite": "Allahummaftah li abwaba rahmatik (O Allah, open for me the doors of Your mercy).",
+    "details": "Do not rush to the Kaaba through crowds. Preserve safety and good manners with fellow pilgrims."
+  },
+  {
+    "step": 3,
+    "phase": "Main Rite",
+    "title": "Tawaf (7 Circuits Around the Kaaba)",
+    "instruction": "Start from the Black Stone line and complete 7 anticlockwise rounds. Men may do idtiba' and brisk walk in first 3 rounds if space allows.",
+    "recite": "Rabbana atina fid-dunya hasanah wa fil-akhirati hasanah wa qina adhaban-nar.",
+    "details": "Avoid pushing and harming others. Any authentic dhikr and personal dua can be recited throughout Tawaf."
+  },
+  {
+    "step": 4,
+    "phase": "After Tawaf",
+    "title": "Two Rak'ah and Zamzam",
+    "instruction": "Pray two rak'ah after Tawaf if possible, then drink Zamzam and make sincere dua.",
+    "recite": "Allahumma inni as'aluka ilman nafi'an, wa rizqan wasi'an, wa shifa'an min kulli da'.",
+    "details": "If crowded, pray in any available place in Masjid al-Haram. Allah accepts effort with sincerity."
+  },
+  {
+    "step": 5,
+    "phase": "Main Rite",
+    "title": "Sa'i Between Safa and Marwah",
+    "instruction": "Complete 7 trips starting at Safa and ending at Marwah. Men may jog between green markers when feasible.",
+    "recite": "Inna as-Safa wal-Marwata min sha'a'irillah... and abundant personal duas.",
+    "details": "There is no single fixed dua for each lap. Keep dhikr, Quran recitation, and heartfelt supplication."
+  },
+  {
+    "step": 6,
+    "phase": "Completion",
+    "title": "Halq or Taqsir to Exit Ihram",
+    "instruction": "Men should shave (best) or shorten all around. Women trim approximately fingertip-length from their hair.",
+    "recite": "Ask Allah for acceptance: Allahumma taqabbal minni.",
+    "details": "After hair cutting, Umrah is complete and Ihram restrictions are lifted. Maintain gratitude and good conduct."
+  }
+]
