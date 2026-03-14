@@ -28,7 +28,6 @@ export default defineConfig(({ mode }) => {
         overlay: true,
         clientPort: 443,
         protocol: 'wss',
-        host: 'islamic-chat-app.cluster-7.preview.emergentcf.cloud',
       },
     },
     build: {
