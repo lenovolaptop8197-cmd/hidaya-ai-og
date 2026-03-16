@@ -177,25 +177,46 @@ const recalibrate = async () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-3">
-            <Button
-              className="rounded-full bg-[#23B574] text-white hover:bg-[#1d9560]"
-              data-testid="enable-compass-button"
-              onClick={enableCompass}
-              type="button"
-            >
-              Enable Compass
-            </Button>
-            <Button
-              className="rounded-full border border-[#23B574]/20 bg-transparent text-[#23B574] hover:bg-[#23B574]/10"
-              data-testid="refresh-qibla-location-button"
-              onClick={requestLocation}
-              type="button"
-              variant="ghost"
-            >
-              Refresh Location
-            </Button>
-          </div>
+         <div className="flex flex-wrap gap-3 mt-4">
+          {!compassEnabled ? (
+            <>
+              <Button
+                className="rounded-full bg-[#23B574] text-white hover:bg-[#1d9560]"
+                data-testid="enable-compass-button"
+                onClick={enableCompass}
+                type="button"
+              >
+                Enable Compass
+              </Button>
+              <Button
+                className="rounded-full border border-[#23B574]/20 bg-transparent text-[#23B574] hover:bg-[#23B574]/10"
+                data-testid="refresh-qibla-location-button"
+                onClick={requestLocation}
+                type="button"
+                variant="ghost"
+              >
+                Refresh Location
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button
+                onClick={() => setCompassEnabled(false)}
+                variant="destructive"
+                className="rounded-full"
+              >
+                Disable Compass
+              </Button>
+              <button
+                onClick={recalibrate}
+                className="px-4 py-2 bg-[#23B574]/10 text-[#23B574] rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#23B574]/20 transition-colors"
+              >
+                <RefreshCw size={16} />
+                Recalibrate
+              </button>
+            </>
+          )}
+        </div>
         </CardContent>
       </Card>
     </section>
