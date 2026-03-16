@@ -62,7 +62,21 @@ export default function QiblaPage() {
       toast.error("Compass could not be enabled on this device.");
     }
   };
-
+const recalibrate = async () => {
+    setHeading(0);
+    if (typeof DeviceOrientationEvent !== "undefined" && typeof DeviceOrientationEvent.requestPermission === "function") {
+      try {
+        const permission = await DeviceOrientationEvent.requestPermission();
+        if (permission === "granted") {
+          toast.success("Sensors reset. Please do a figure-8 motion.");
+        }
+      } catch (error) {
+        toast.error("Calibration failed.");
+      }
+    } else {
+      toast.success("Calibration reset. Please do a figure-8 motion.");
+    }
+  };
   useEffect(() => {
     if (!compassEnabled) return;
     const onOrientation = (event) => {
@@ -88,10 +102,17 @@ export default function QiblaPage() {
   return (
     <section className="space-y-6">
       <Card className="border-[#23B574]/10 bg-white/90" data-testid="qibla-card">
-        <CardHeader>
+        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle data-testid="qibla-title" className="text-2xl text-[#1a202c]">
             Qibla Compass
           </CardTitle>
+          <button
+            onClick={recalibrate}
+            className="px-3 py-1.5 bg-[#23B574]/10 text-[#23B574] rounded-full text-xs font-medium flex items-center gap-2 hover:bg-[#23B574]/20 transition-colors"
+          >
+            <RefreshCw size={14} />
+            Recalibrate
+          </button>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="rounded-2xl bg-[#f9f7f2] p-4 text-sm text-[#4a5568]" data-testid="qibla-coordinates">
