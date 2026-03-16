@@ -66,12 +66,14 @@ export default function QiblaPage() {
   useEffect(() => {
     if (!compassEnabled) return;
     const onOrientation = (event) => {
-      const angle =
-        typeof event.webkitCompassHeading === "number"
-          ? event.webkitCompassHeading
-          : event.alpha
-            ? 360 - event.alpha
-            : 0;
+      let angle = 0;
+      if (typeof event.webkitCompassHeading === "number") {
+        // iOS: The most accurate heading
+        angle = event.webkitCompassHeading;
+      } else if (typeof event.alpha === "number") {
+        // Android: Needs to be inverted
+        angle = 360 - event.alpha;
+      }
       setHeading(angle);
     };
     window.addEventListener("deviceorientation", onOrientation, true);
