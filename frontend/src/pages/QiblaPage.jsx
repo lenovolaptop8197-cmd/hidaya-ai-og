@@ -101,18 +101,23 @@ const recalibrate = async () => {
 
   return (
     <section className="space-y-6">
-      <Card className="border-[#23B574]/10 bg-white/90" data-testid="qibla-card">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle data-testid="qibla-title" className="text-2xl text-[#1a202c]">
-            Qibla Compass
-          </CardTitle>
-          <button
-            onClick={recalibrate}
-            className="px-3 py-1.5 bg-[#23B574]/10 text-[#23B574] rounded-full text-xs font-medium flex items-center gap-2 hover:bg-[#23B574]/20 transition-colors"
-          >
-            <RefreshCw size={14} />
-            Recalibrate
-          </button>
+      <CardHeader className="pb-4">
+          <div className="flex flex-row items-center justify-between">
+            <CardTitle data-testid="qibla-title" className="text-2xl text-[#1a202c]">
+              Qibla Compass
+            </CardTitle>
+            <button
+              onClick={recalibrate}
+              className="px-3 py-1.5 bg-[#23B574]/10 text-[#23B574] rounded-full text-xs font-medium flex items-center gap-2 hover:bg-[#23B574]/20 transition-colors"
+            >
+              <RefreshCw size={14} />
+              Recalibrate
+            </button>
+          </div>
+          {/* This adds the instruction text right below the title/button */}
+          <p className="text-[11px] text-gray-500 mt-2 italic leading-tight">
+            If direction is wrong, move your device in a ♾️ figure-8 motion to calibrate sensors.
+          </p>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="rounded-2xl bg-[#f9f7f2] p-4 text-sm text-[#4a5568]" data-testid="qibla-coordinates">
